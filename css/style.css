@@ -1,0 +1,322 @@
+/* montserrat-700 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+/* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+*{
+    padding: 0;
+}
+
+.header {
+    background-color: black;
+    background-image: url(../img/mob-back.png);
+    background-size: cover;
+    padding-top: 35px;
+    margin-bottom: 70px;
+    padding-bottom: 232px;
+}
+
+.nav {
+    margin-bottom: 18px;
+}
+
+.div_with_buttons {
+    margin-bottom: 116px;
+    list-style: none;
+    justify-content: center;
+    display: flex;
+}
+
+.div_with_buttons button {
+    width: 94px;
+    height: 40px;
+    border-style: none;
+    background-color: transparent;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.div_with_buttons button:hover{
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 18px;
+}
+
+.firm_name {
+    text-decoration: none;
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+h1 {
+    margin-bottom: 16px;
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.under_th_maintitle {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+}
+
+.box_for_lead {
+    text-align: center;
+}
+
+.like_a_button {
+    border-radius: 20px;
+    background-color: rgb(255, 78, 80);
+    width: 280px;
+    height: 40px;
+    border-style: none;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.section_header {
+    font-size: 22px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.company_list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+}
+
+.team_member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.photo {
+    position: relative;
+    display: table;
+    margin-bottom: 18px;
+}
+
+.photo::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 0px;
+    right: 0px;
+}
+
+.lil_pic_frst::after {
+    content: "";
+    background-image: url(../img/1_red.png);
+    background-color: #ff4e50;
+}
+.lil_pic_scnd::after {
+    content: "";
+    background-image: url(../img/2_orange.png);
+    background-color:#ffa507;
+}
+.lil_pic_thrd::after {
+    content: "";
+    background-image: url(../img/3_green.png);
+    background-color: #1cd7ad;
+}
+.lil_pic_frth::after {
+    content: "";
+    background-image: url(../img/4_blue.png);
+    background-color: #4e73db;
+}
+
+.name_undr_photo {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.about_photo {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
+
+}
+
+.othr_button {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 78, 80);
+    border-radius: 20px;
+    width: 284px;
+    height: 44px;
+    font-size: 14px;
+    font-family: "Montserrat";  
+    color: rgb(255, 78, 80);
+    font-weight: bold;
+    line-height: 1.2;
+    background-color: transparent;
+}  
+.main {
+    text-align: center;
+    margin-bottom: 12px;  
+}
+
+.company_list,
+.name_undr_photo,
+.about_photo {
+    margin-top: 0;
+}
+
+@media (min-width: 767px)
+{
+    .header {
+        background-image: url(../img/tab-back.png);
+    }
+    .div_with_buttons {
+        margin-bottom: 0;
+        justify-content: flex-end;
+    }
+    .firm_name {
+        padding-top: 10px;  
+    }
+    .nav {
+        margin-bottom: 140px;
+    }
+    .lead {
+        margin-top: 0;
+    }
+    .under_th_maintitle {
+        margin-bottom: 36px;
+        font-size: 24px;
+        margin-top: 0;
+    }
+    h1 {
+        font-size: 52px;
+        margin-bottom: 40px;
+        margin-top: 0;
+    }
+    .section_header {
+        margin-bottom: 30px;
+    }
+    .company_list {
+        margin-bottom: 36px;
+    }
+    .team_member {
+        margin: 0;
+        margin-bottom: 50px;
+        padding: 0 20px;
+    }
+    .class_for_order_second {
+        order:3;
+        margin-bottom: 0px;
+    }
+    .class_for_order_third {
+        order:2;
+    }
+    .class_for_order_fourth {
+        order:4;
+        margin-bottom: 0px;      
+    }
+    .main_section h2{
+        margin-bottom: 30px;
+    }
+    .othr_button {
+        height: 44px;
+    }  
+
+}
+
+@media (min-width: 1439px)
+{
+    .header {
+        background-image: url(../img/desk-back.png);
+    }
+    .div_with_buttons {
+        margin-bottom: 150px;
+    }
+    h1 {
+        margin-bottom: 36px;
+    }
+    .under_th_maintitle {
+        margin-bottom: 30px;
+    }
+    .team_member {
+        margin: 0;
+        margin-right: 22px;
+    }
+    .company_list {
+        margin-bottom: 36px;
+    }
+    .othr_button {
+        margin-bottom: 70px;
+    }
+}
